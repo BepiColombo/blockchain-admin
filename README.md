@@ -1,3 +1,24 @@
+
+### 安装依赖
+```
+npm install
+```
+
+### 开发环境
+```
+npm run serve
+```
+
+### 打包
+```
+npm run build
+```
+
+### 更该主题色
+> 1. /assets/scss/variables.scss 修改 $main-color 
+> 2. /styles/color-config.js 中修改对应颜色即可
+
+### 目录结构
 ```
 ├── public
 ├── src
@@ -37,3 +58,4 @@
 ├── static
 ├── vue.config.js   ----- vue-cli 3.0配置文件
 ```
+
