@@ -1,4 +1,4 @@
-
+```
 ├── public
 ├── src
 │   ├── App.vue
@@ -36,4 +36,4 @@
 │   └── views  布局组件
 ├── static
 ├── vue.config.js   ----- vue-cli 3.0配置文件
-
+```
