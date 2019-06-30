@@ -16,6 +16,7 @@ npm run build
 
 ### 更该主题色
 > step 1. /assets/scss/variables.scss 修改 $main-color 
+>
 > step 2. /styles/color-config.js 中修改对应颜色
 
 ### 目录结构
