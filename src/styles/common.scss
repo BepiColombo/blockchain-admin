@@ -1,0 +1,31 @@
+%table-layout {
+  .top-box {
+    width: 100%;
+
+    .filter-container {
+      margin: 20px 0;
+      .filter-item {
+        margin-right: 10px;
+      }
+    }
+    .data-container {
+      width: 600px;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .el-form {
+    .el-form-item {
+      margin: 20px 0;
+    }
+  }
+  .pagination {
+    margin: 20px 0;
+  }
+
+  .switch {
+    margin-right: 10px;
+  }
+}
+
+$mai: #eee;
