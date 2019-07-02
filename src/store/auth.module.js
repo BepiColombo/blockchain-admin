@@ -37,20 +37,23 @@ const actions = {
   check_auth(context) {
     return new Promise((resolve, reject) => {
       if (JwtService.getToken()) {
-        ApiService.setHeader();
-        ApiService.get("user")
-          .then(({ data }) => {
-            context.commit(set_auth, data.user);
-            resolve()
-          })
-          .catch(({ response }) => {
-            context.commit('set_error', response.data.errors);
-            // reject()
-          });
+        resolve()
+        // ApiService.setHeader();
+        // ApiService.get("user")
+        //   .then(({ data }) => {
+        //     context.commit("set_auth", data.user);
+        //     resolve()
+        //   })
+        //   .catch(({ response }) => {
+        //     reject("un_auth")
+
+        //     console.log("net error")
+        //     context.commit('set_error', response.data.errors);
+        //   });
       } else {
         context.commit('purge_auth');
-        resolve()
-        // reject()
+        // resolve()
+        reject("un_login")
       }
     })
   },

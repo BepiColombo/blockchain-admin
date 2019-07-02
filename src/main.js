@@ -34,7 +34,12 @@ router.beforeEach((to, from, next) => {
     Promise.all([store.dispatch('check_auth')]).then(() => {
       next()
     }).catch(e => {
-      next("/401")
+      console.log(e)
+      if (e == "un_login") {
+        next("/login")
+      } else if (e == "un_auth") {
+        next("/401")
+      }
     })
   }
 

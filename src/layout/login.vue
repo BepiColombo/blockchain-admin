@@ -35,7 +35,7 @@
 
 <script>
 import { mapState } from "vuex";
-import { LOGIN } from "@/store/actions.type";
+import AuthService from "@/service/api/auth.service";
 import "@/assets/js/jquery.particleground.min.js";
 
 export default {
@@ -63,7 +63,10 @@ export default {
   },
   methods: {
     getCaptcha() {},
-    onSubmit() {}
+    onSubmit() {
+      AuthService.login(this.form);
+      this.$router.push({ path: "/" });
+    }
   },
   computed: {
     ...mapState({
